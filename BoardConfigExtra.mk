@@ -10,9 +10,6 @@ TARGET_NEEDS_HACKED_VENDORID := true
 endif
 
 ## Environment variables, setting this here DOES NOT WORK
-# Don't use jack
-ANDROID_COMPILE_WITH_JACK := false
-
 # Append time of day to compiled build zip
 LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
 
