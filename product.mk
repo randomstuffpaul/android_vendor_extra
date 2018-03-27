@@ -11,6 +11,11 @@ endif
 -include vendor/gapps/$(TARGET_ARCH)/$(TARGET_ARCH)-vendor.mk
 endif
 
+# Volume Steps
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.vc_call_vol_steps=7 \
+    ro.config.media_vol_steps=25
+
 # Recovery ADB keys
 PRODUCT_COPY_FILES += \
     vendor/extra/adb_keys:recovery/root/adb_keys
