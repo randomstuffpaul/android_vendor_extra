@@ -3,7 +3,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/extra/overlay
 
 # Google Apps
 ifeq ($(WITH_GMS), true)
-ifeq ($(filter lineage_arm64,$(PRODUCT_NAME)),)
+ifeq ($(filter lineage_berkeley,$(PRODUCT_NAME)),)
 $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
 else
 $(call inherit-product, vendor/gapps/arm/arm-vendor.mk)
