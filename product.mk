@@ -10,6 +10,13 @@ $(call inherit-product, vendor/gapps/arm/arm-vendor.mk)
 endif
 endif
 
+# Huawei stuff
+ifeq ($(filter lineage_berkeley,$(PRODUCT_NAME)),)
+PRODUCT_PACKAGES += \
+    HotwordEnrollmentOKGoogleHI6403 \
+    HotwordEnrollmentXGoogleHI6403
+endif
+
 # Volume Steps
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=7 \
