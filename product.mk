@@ -10,6 +10,10 @@ $(call inherit-product, vendor/gapps/arm/arm-vendor.mk)
 endif
 endif
 
+# Signing
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/certs/releasekey
+PRODUCT_EXTRA_RECOVERY_KEYS := vendor/certs/releasekey
+
 ifeq ($(filter lineage_ether,$(PRODUCT_NAME)),)
 PRODUCT_PACKAGES += \
     init.jav.usb.rc
