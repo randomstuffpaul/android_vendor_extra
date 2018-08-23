@@ -20,11 +20,11 @@ PRODUCT_PACKAGES += \
 endif
 
 # Huawei stuff
-ifeq ($(filter lineage_berkeley,$(PRODUCT_NAME)),)
-PRODUCT_PACKAGES += \
-    HotwordEnrollmentOKGoogleHI6403 \
-    HotwordEnrollmentXGoogleHI6403
-endif
+#ifeq ($(filter lineage_berkeley,$(PRODUCT_NAME)),)
+#PRODUCT_PACKAGES += \
+#    HotwordEnrollmentOKGoogleHI6403 \
+#    HotwordEnrollmentXGoogleHI6403
+#endif
 
 # Volume Steps
 PRODUCT_PROPERTY_OVERRIDES += \
