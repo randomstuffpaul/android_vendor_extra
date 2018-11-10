@@ -1,5 +1,7 @@
 LOCAL_PATH := $(call my-dir)
 
+ifneq ($(filter berkeley,$(TARGET_DEVICE)),)
+
 include $(CLEAR_VARS)
 LOCAL_MODULE := HotwordEnrollmentOKGoogleHI6403
 LOCAL_MODULE_OWNER := honor
@@ -23,3 +25,5 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_DEX_PREOPT := false
 include $(BUILD_PREBUILT)
+
+endif

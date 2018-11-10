@@ -10,17 +10,17 @@ endif
 PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/certs/releasekey
 PRODUCT_EXTRA_RECOVERY_KEYS := vendor/certs/releasekey
 
-#ifeq ($(filter lineage_ether,$(PRODUCT_NAME)),)
-#PRODUCT_PACKAGES += \
-#    init.jav.usb.rc
-#endif
+ifneq ($(filter lineage_ether,$(PRODUCT_NAME)),)
+PRODUCT_PACKAGES += \
+    init.jav.usb.rc
+endif
 
-# Huawei stuff
-#ifeq ($(filter lineage_berkeley,$(PRODUCT_NAME)),)
-#PRODUCT_PACKAGES += \
-#    HotwordEnrollmentOKGoogleHI6403 \
-#    HotwordEnrollmentXGoogleHI6403
-#endif
+ Huawei stuff
+ifneq ($(filter lineage_berkeley,$(PRODUCT_NAME)),)
+PRODUCT_PACKAGES += \
+    HotwordEnrollmentOKGoogleHI6403 \
+    HotwordEnrollmentXGoogleHI6403
+endif
 
 # Volume Steps
 PRODUCT_PROPERTY_OVERRIDES += \
