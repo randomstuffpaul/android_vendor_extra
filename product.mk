@@ -10,12 +10,13 @@ endif
 PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/certs/releasekey
 PRODUCT_EXTRA_RECOVERY_KEYS := vendor/certs/releasekey
 
+# Ether USB script
 ifneq ($(filter lineage_ether,$(PRODUCT_NAME)),)
 PRODUCT_PACKAGES += \
     init.jav.usb.rc
 endif
 
- Huawei stuff
+# Huawei stuff
 ifneq ($(filter lineage_berkeley,$(PRODUCT_NAME)),)
 PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleHI6403 \
