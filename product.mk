@@ -10,13 +10,6 @@ endif
 PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/certs/releasekey
 PRODUCT_EXTRA_RECOVERY_KEYS := vendor/certs/releasekey
 
-# Huawei stuff
-ifneq ($(filter lineage_berkeley,$(PRODUCT_NAME)),)
-PRODUCT_PACKAGES += \
-    HotwordEnrollmentOKGoogleHI6403 \
-    HotwordEnrollmentXGoogleHI6403
-endif
-
 # Volume Steps
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=7 \
