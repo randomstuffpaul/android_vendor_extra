@@ -8,7 +8,7 @@ endif
 
 # Signing
 PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/certs/releasekey
-PRODUCT_EXTRA_RECOVERY_KEYS := vendor/certs/releasekey
+PRODUCT_EXTRA_RECOVERY_KEYS += vendor/certs/releasekey
 
 # Ether USB script
 ifneq ($(filter lineage_ether,$(PRODUCT_NAME)),)
