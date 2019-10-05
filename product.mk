@@ -6,11 +6,6 @@ ifeq ($(WITH_GMS), true)
 $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 endif
 
-# HwCamera2
-ifneq ($(filter lineage_berkeley,$(PRODUCT_NAME)),)
-$(call inherit-product-if-exists, vendor/extra/camera/camera-vendor.mk)
-endif
-
 # Signing
 PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/certs/releasekey
 PRODUCT_EXTRA_RECOVERY_KEYS := vendor/certs/releasekey
