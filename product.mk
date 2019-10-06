@@ -7,8 +7,8 @@ $(call inherit-product-if-exists, vendor/gapps/arm64/arm64-vendor.mk)
 endif
 
 # Signing
-PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/certs/releasekey
-PRODUCT_EXTRA_RECOVERY_KEYS := vendor/certs/releasekey
+#PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/certs/releasekey
+#PRODUCT_EXTRA_RECOVERY_KEYS := vendor/certs/releasekey
 
 # Volume Steps
 PRODUCT_PROPERTY_OVERRIDES += \
